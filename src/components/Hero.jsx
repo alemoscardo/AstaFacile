@@ -52,7 +52,7 @@ const Hero = () => {
               <div className="text-gray-600">Tasso di successo registrazioni</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
-              <div className="text-3xl font-bold text-primary-600 mb-2">100+</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">150+</div>
               <div className="text-gray-600">Clienti soddisfatti</div>
             </div>
           </div>
