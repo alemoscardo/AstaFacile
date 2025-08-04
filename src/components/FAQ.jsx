@@ -98,7 +98,10 @@ const FAQ = () => {
               Contattaci direttamente e ti risponderemo in pochi minuti
             </p>
             <button 
-              onClick={() => window.open('https://wa.me/393493394926?text=Ciao! Ho una domanda che non ho trovato nelle FAQ...', '_blank')}
+              onClick={() => {
+                const whatsappUrl = `${import.meta.env.VITE_WHATSAPP_URL}?text=Ciao! Ho una domanda che non ho trovato nelle FAQ...`
+                window.open(whatsappUrl, '_blank')
+              }}
               className="btn-primary"
             >
               Fai una Domanda

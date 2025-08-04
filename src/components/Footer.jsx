@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <button 
-                onClick={() => window.open('https://wa.me/393493394926', '_blank')}
+                onClick={() => window.open(import.meta.env.VITE_WHATSAPP_URL, '_blank')}
                 className="text-green-400 hover:text-green-300 transition-colors"
                 aria-label="WhatsApp"
               >
@@ -25,7 +25,7 @@ const Footer = () => {
                 </svg>
               </button>
               <button 
-                onClick={() => window.location.href = 'mailto:info@astafacile.it'}
+                onClick={() => window.location.href = `mailto:${import.meta.env.VITE_EMAIL}`}
                 className="text-primary-400 hover:text-primary-300 transition-colors"
                 aria-label="Email"
               >
@@ -56,7 +56,10 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/393493394926?text=Vorrei una consulenza gratuita', '_blank')}
+                  onClick={() => {
+                    const whatsappUrl = `${import.meta.env.VITE_WHATSAPP_URL}?text=Vorrei una consulenza gratuita`
+                    window.open(whatsappUrl, '_blank')
+                  }}
                   className="text-gray-300 hover:text-primary-400 transition-colors text-left"
                 >
                   Consulenza Gratuita
@@ -75,7 +78,7 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => window.location.href = 'mailto:info@astafacile.it'}
+                  onClick={() => window.location.href = `mailto:${import.meta.env.VITE_EMAIL}`}
                   className="text-gray-300 hover:text-primary-400 transition-colors text-left"
                 >
                   Contattaci
@@ -83,7 +86,7 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/393493394926', '_blank')}
+                  onClick={() => window.open(import.meta.env.VITE_WHATSAPP_URL, '_blank')}
                   className="text-gray-300 hover:text-primary-400 transition-colors text-left"
                 >
                   WhatsApp

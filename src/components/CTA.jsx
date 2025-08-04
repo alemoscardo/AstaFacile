@@ -2,7 +2,8 @@ import React from 'react'
 
 const CTA = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/393493394926?text=Ciao! Ho visto il vostro sito e vorrei iniziare il processo per partecipare a un\'asta immobiliare. Potete aiutarmi?', '_blank')
+    const whatsappUrl = `${import.meta.env.VITE_WHATSAPP_URL}?text=Ciao! Ho visto il vostro sito e vorrei iniziare il processo per partecipare a un'asta immobiliare. Potete aiutarmi?`
+    window.open(whatsappUrl, '_blank')
   }
 
   const handleFormClick = () => {
@@ -10,7 +11,8 @@ const CTA = () => {
   }
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:info@astafacile.it?subject=Richiesta informazioni asta immobiliare&body=Ciao, vorrei maggiori informazioni sui vostri servizi per le aste immobiliari.'
+    const emailUrl = `mailto:${import.meta.env.VITE_EMAIL}?subject=Richiesta informazioni asta immobiliare&body=Ciao, vorrei maggiori informazioni sui vostri servizi per le aste immobiliari.`
+    window.location.href = emailUrl
   }
 
   return (
@@ -50,7 +52,7 @@ const CTA = () => {
               onClick={handleEmailClick}
               className="text-primary-100 hover:text-white underline transition-colors"
               >
-              info@astafacile.it
+              {import.meta.env.VITE_EMAIL}
             </button>
           </div>
 

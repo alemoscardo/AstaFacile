@@ -56,3 +56,6 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 .vercel
+
+# Claude Code
+.claude/

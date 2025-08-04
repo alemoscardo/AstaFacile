@@ -4,7 +4,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/393493394926?text=Ciao! Ho visto AstaFacile e vorrei maggiori informazioni per partecipare a un\'asta immobiliare.', '_blank')
+    const whatsappUrl = `${import.meta.env.VITE_WHATSAPP_URL}?text=Ciao! Ho visto AstaFacile e vorrei maggiori informazioni per partecipare a un'asta immobiliare.`
+    window.open(whatsappUrl, '_blank')
   }
 
   const handleLogoClick = () => {
