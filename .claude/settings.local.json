@@ -4,7 +4,10 @@
       "Bash(mkdir:*)",
       "Bash(npm install)",
       "Bash(npm run build:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(npx vercel:*)",
+      "Bash(vercel inspect:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
