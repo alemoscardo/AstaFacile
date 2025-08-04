@@ -44,16 +44,16 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-6">
+            <div key={index} className="bg-gray-50 rounded-lg p-6 flex flex-col h-full">
               <div className="flex mb-4">
                 {renderStars(testimonial.rating)}
               </div>
               
-              <p className="text-gray-700 mb-6 italic leading-relaxed">
+              <p className="text-gray-700 mb-6 italic leading-relaxed flex-grow">
                 "{testimonial.text}"
               </p>
               
-              <div className="border-t pt-4">
+              <div className="border-t pt-4 mt-auto">
                 <div className="font-semibold text-gray-900">{testimonial.name}</div>
                 <div className="text-primary-600">{testimonial.location}</div>
               </div>
