@@ -69,8 +69,8 @@ const HowItWorks = () => {
 
         <div className="text-center mt-12">
           <div className="bg-primary-50 rounded-lg p-6 max-w-2xl mx-auto">
-            <p className="text-primary-800 font-medium flex items-center justify-center gap-2">
-              <Lightbulb className="w-5 h-5 text-primary-600" />
+            <p className="text-primary-800 font-medium flex items-start justify-center gap-2">
+              <Lightbulb className="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
               <span><strong>Importante:</strong> Non conserviamo i tuoi documenti. 
               Tutto viene gestito tramite servizi sicuri di terze parti.</span>
             </p>
