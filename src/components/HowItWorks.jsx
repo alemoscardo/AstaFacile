@@ -1,4 +1,5 @@
 import React from 'react'
+import { Home, MessageCircle, FileText, CheckCircle, Lightbulb } from 'lucide-react'
 
 const HowItWorks = () => {
   const steps = [
@@ -6,25 +7,25 @@ const HowItWorks = () => {
       number: '1',
       title: 'Trovi la casa',
       description: 'Scopri l\'immobile che ti interessa su Immobiliare.it o altri portali',
-      icon: '🏠'
+      icon: Home
     },
     {
       number: '2',
       title: 'Ci contatti',
       description: 'Clicca su "Hai bisogno di aiuto?" e scrivici su WhatsApp',
-      icon: '💬'
+      icon: MessageCircle
     },
     {
       number: '3',
       title: 'Ti guidiamo',
       description: 'Prepariamo insieme tutti i documenti necessari per l\'asta',
-      icon: '📋'
+      icon: FileText
     },
     {
       number: '4',
       title: 'Registrazione',
       description: 'Gestiamo per te tutta la procedura di registrazione all\'asta',
-      icon: '✅'
+      icon: CheckCircle
     }
   ]
 
@@ -48,8 +49,8 @@ const HowItWorks = () => {
               )}
               
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                  {step.icon}
+                <div className="w-24 h-24 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <step.icon className="w-8 h-8 text-primary-600" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
                   {step.number}
@@ -68,9 +69,10 @@ const HowItWorks = () => {
 
         <div className="text-center mt-12">
           <div className="bg-primary-50 rounded-lg p-6 max-w-2xl mx-auto">
-            <p className="text-primary-800 font-medium">
-              💡 <strong>Importante:</strong> Non conserviamo i tuoi documenti. 
-              Tutto viene gestito tramite servizi sicuri di terze parti.
+            <p className="text-primary-800 font-medium flex items-center justify-center gap-2">
+              <Lightbulb className="w-5 h-5 text-primary-600" />
+              <span><strong>Importante:</strong> Non conserviamo i tuoi documenti. 
+              Tutto viene gestito tramite servizi sicuri di terze parti.</span>
             </p>
           </div>
         </div>

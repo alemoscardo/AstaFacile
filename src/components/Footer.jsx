@@ -1,4 +1,5 @@
 import React from 'react'
+import { Lock } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -114,8 +115,9 @@ const Footer = () => {
           </div>
           
           <div className="mt-4 text-center text-xs text-gray-500">
-            <p>
-              🔒 Non conserviamo i tuoi documenti personali. Tutti i dati vengono gestiti tramite servizi sicuri di terze parti.
+            <p className="flex items-center justify-center gap-2">
+              <Lock className="w-4 h-4" />
+              <span>Non conserviamo i tuoi documenti personali. Tutti i dati vengono gestiti tramite servizi sicuri di terze parti.</span>
             </p>
             <p className="mt-1">
               Conformità GDPR garantita. I tuoi dati sono sempre protetti e utilizzati solo per fornirti il servizio richiesto.

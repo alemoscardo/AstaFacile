@@ -1,36 +1,37 @@
 import React from 'react'
+import { Trophy, Handshake, Zap, Shield, Gem, Smartphone } from 'lucide-react'
 
 const WhyChooseUs = () => {
   const benefits = [
     {
       title: 'Esperienza Comprovata',
       description: 'Oltre 100 registrazioni completate con successo e un tasso di soddisfazione del 95%',
-      icon: '🏆'
+      icon: Trophy
     },
     {
       title: 'Supporto Completo',
       description: 'Ti accompagniamo dall\'inizio alla fine, senza lasciare nulla al caso',
-      icon: '🤝'
+      icon: Handshake
     },
     {
       title: 'Velocità Garantita',
       description: 'Completiamo la registrazione in media entro 48 ore dal primo contatto',
-      icon: '⚡'
+      icon: Zap
     },
     {
       title: 'Massima Sicurezza',
       description: 'Lavoriamo solo con servizi certificati e non conserviamo i tuoi dati',
-      icon: '🔒'
+      icon: Shield
     },
     {
       title: 'Trasparenza Totale',
       description: 'Costi chiari fin dall\'inizio, nessuna sorpresa o costo nascosto',
-      icon: '💎'
+      icon: Gem
     },
     {
       title: 'Risposta Immediata',
       description: 'Rispondiamo su WhatsApp entro pochi minuti, anche nei weekend',
-      icon: '📱'
+      icon: Smartphone
     }
   ]
 
@@ -49,7 +50,9 @@ const WhyChooseUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-4">{benefit.icon}</div>
+              <div className="mb-4">
+                <benefit.icon className="w-12 h-12 text-primary-600" />
+              </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {benefit.title}
               </h3>
