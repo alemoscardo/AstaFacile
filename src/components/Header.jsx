@@ -7,12 +7,21 @@ const Header = () => {
     window.open('https://wa.me/393493394926?text=Ciao! Ho visto AstaFacile e vorrei maggiori informazioni per partecipare a un\'asta immobiliare.', '_blank')
   }
 
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container-max section-padding">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary-700">AstaFacile</h1>
+            <button 
+              onClick={handleLogoClick}
+              className="text-2xl font-bold text-primary-700 hover:text-primary-800 transition-colors cursor-pointer"
+            >
+              AstaFacile
+            </button>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
