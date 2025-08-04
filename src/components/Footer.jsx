@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <button 
-                onClick={() => window.open('https://wa.me/393XXXXXXXXX', '_blank')}
+                onClick={() => window.open('https://wa.me/393493394926', '_blank')}
                 className="text-green-400 hover:text-green-300 transition-colors"
                 aria-label="WhatsApp"
               >
@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/393XXXXXXXXX?text=Vorrei una consulenza gratuita', '_blank')}
+                  onClick={() => window.open('https://wa.me/393493394926?text=Vorrei una consulenza gratuita', '_blank')}
                   className="text-gray-300 hover:text-primary-400 transition-colors text-left"
                 >
                   Consulenza Gratuita
@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => window.open('https://wa.me/393XXXXXXXXX', '_blank')}
+                  onClick={() => window.open('https://wa.me/393493394926', '_blank')}
                   className="text-gray-300 hover:text-primary-400 transition-colors text-left"
                 >
                   WhatsApp

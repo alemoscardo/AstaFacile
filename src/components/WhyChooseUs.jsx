@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
             e ti daremo un preventivo personalizzato.
           </p>
           <button 
-            onClick={() => window.open('https://wa.me/393XXXXXXXXX?text=Ciao! Vorrei una consulenza gratuita per un\'asta immobiliare.', '_blank')}
+            onClick={() => window.open('https://wa.me/393493394926?text=Ciao! Vorrei una consulenza gratuita per un\'asta immobiliare.', '_blank')}
             className="bg-white text-primary-700 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
           >
             Richiedi Consulenza Gratuita

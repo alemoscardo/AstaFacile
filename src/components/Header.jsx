@@ -4,7 +4,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/393XXXXXXXXX?text=Ciao! Ho visto AstaFacile e vorrei maggiori informazioni per partecipare a un\'asta immobiliare.', '_blank')
+    window.open('https://wa.me/393493394926?text=Ciao! Ho visto AstaFacile e vorrei maggiori informazioni per partecipare a un\'asta immobiliare.', '_blank')
   }
 
   return (

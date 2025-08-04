@@ -2,7 +2,7 @@ import React from 'react'
 
 const CTA = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/393XXXXXXXXX?text=Ciao! Ho visto il vostro sito e vorrei iniziare il processo per partecipare a un\'asta immobiliare. Potete aiutarmi?', '_blank')
+    window.open('https://wa.me/393493394926?text=Ciao! Ho visto il vostro sito e vorrei iniziare il processo per partecipare a un\'asta immobiliare. Potete aiutarmi?', '_blank')
   }
 
   const handleFormClick = () => {
