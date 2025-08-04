@@ -43,13 +43,13 @@ const HowItWorks = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="text-center relative">
+            <div key={index} className={`text-center relative animate-fade-in-up animation-delay-${(index + 1) * 200}`}>
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-primary-200 -translate-x-1/2 z-0"></div>
               )}
               
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-24 h-24 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-primary-200 transition-all duration-300 hover:scale-110">
                   <step.icon className="w-8 h-8 text-primary-600" />
                 </div>
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-sm">

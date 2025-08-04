@@ -1,4 +1,5 @@
 import React from 'react'
+import { Star } from 'lucide-react'
 
 const Testimonials = () => {
   const testimonials = [
@@ -24,9 +25,10 @@ const Testimonials = () => {
 
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, index) => (
-      <span key={index} className={`text-xl ${index < rating ? 'text-yellow-400' : 'text-gray-300'}`}>
-        ⭐
-      </span>
+      <Star 
+        key={index} 
+        className={`w-5 h-5 ${index < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}`}
+      />
     ))
   }
 
@@ -44,7 +46,7 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-6 flex flex-col h-full">
+            <div key={index} className={`bg-gray-50 rounded-lg p-6 flex flex-col h-full hover:bg-gray-100 transition-all duration-300 hover:scale-105 animate-fade-in-up animation-delay-${(index + 1) * 200}`}>
               <div className="flex mb-4">
                 {renderStars(testimonial.rating)}
               </div>

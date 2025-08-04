@@ -49,8 +49,8 @@ const WhyChooseUs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-4">
+            <div key={index} className={`bg-white rounded-lg p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fade-in-up animation-delay-${(index + 1) * 100}`}>
+              <div className="mb-4 transition-transform duration-300 hover:scale-110">
                 <benefit.icon className="w-12 h-12 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
