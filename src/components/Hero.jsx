@@ -74,9 +74,9 @@ const Hero = () => {
           >
             <TypeAnimation
               sequence={[
-                'La tua casa all\'asta,',
+                'Registrati all\'asta,',
                 1000,
-                'La tua casa all\'asta, senza stress',
+                'Registrati all\'asta, senza stress',
                 2000,
               ]}
               wrapper="span"
