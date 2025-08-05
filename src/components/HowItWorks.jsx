@@ -11,6 +11,11 @@ const HowItWorks = () => {
     triggerOnce: true
   })
 
+  const handleWhatsAppClick = () => {
+    const whatsappUrl = `${import.meta.env.VITE_WHATSAPP_URL}?text=Ciao! Ho visto AstaFacile e vorrei maggiori informazioni per partecipare a un'asta immobiliare.`
+    window.open(whatsappUrl, '_blank')
+  }
+
   const steps = [
     {
       number: '1',
@@ -21,7 +26,18 @@ const HowItWorks = () => {
     {
       number: '2',
       title: 'Ci contatti',
-      description: 'Clicca su "Hai bisogno di aiuto?" e scrivici su WhatsApp',
+      description: (
+        <span>
+          Clicca su{' '}
+          <button 
+            onClick={handleWhatsAppClick}
+            className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors cursor-pointer"
+          >
+            "Hai bisogno di aiuto?"
+          </button>
+          {' '}e scrivici su WhatsApp
+        </span>
+      ),
       icon: MessageCircle
     },
     {
