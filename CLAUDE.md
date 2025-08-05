@@ -4,58 +4,52 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AstaFacile is a static, web-based platform that helps first-time real estate buyers in Italy participate in house auctions. This is a frontend-only project with no backend, designed to be hosted on static hosting platforms like Vercel or Netlify.
+AstaFacile is a React-based landing page that helps first-time real estate buyers in Italy participate in house auctions. This is a frontend-only static site designed for Vercel deployment.
 
 ## Technical Architecture
 
-**Stack**: React with Vite, JavaScript/HTML/CSS, Tailwind CSS
-**Hosting**: Static hosting (Vercel/Netlify recommended)
+**Stack**: React 18 + Vite, JavaScript, Tailwind CSS, Lucide React icons
+**Hosting**: Vercel (configured via vercel.json)
 **Domain**: astafacile.it
-**Deployment**: GitHub → CI/CD → CDN-delivered static site
+**Build Tool**: Vite with esbuild minification
 
-The platform operates as a Single Page Application (SPA) that routes users to external tools for form submissions and document handling. All user interactions are handled through third-party integrations:
-- WhatsApp Click-to-Chat for direct communication
-- Google Forms/Typeform for data collection
-- DocuSign/PDFfiller for document processing
-- Email fallback via mailto links
+The application is a single-page layout with component sections that integrate with external services:
+- WhatsApp Click-to-Chat via environment variables
+- External form submissions (Google Forms placeholder)
+- Email contact via mailto links
+- No backend or database dependencies
 
 ## Development Commands
 
-**Note**: This repository currently contains only documentation files. When the React/Vite application is implemented, typical commands will be:
 - `npm install` - Install dependencies
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
+- `npm run dev` - Start Vite development server
+- `npm run build` - Build for production (outputs to dist/)
+- `npm run lint` - Run ESLint with React rules
 - `npm run preview` - Preview production build locally
 
-## Key Components Structure
+## Application Structure
 
-The application should be organized around these main components:
-- **Landing Page**: Service explanation and trust building
-- **Contact Options**: WhatsApp button and email fallback
-- **Explainer Section**: Visual "How it Works" flow
-- **CTA Section**: Links to external onboarding forms
-- **Legal/FAQ**: Policies and disclaimers
-- **Testimonials**: Social proof elements
+The app follows a single-page layout pattern in src/App.jsx with sequential component sections:
+```
+Header → Hero → HowItWorks → WhyChooseUs → Testimonials → CTA → FAQ → Footer
+```
 
-## Security & Privacy Considerations
+All components are functional React components using hooks. Common patterns:
+- Environment variables accessed via `import.meta.env.VITE_*`
+- WhatsApp integration through `VITE_WHATSAPP_URL` and `VITE_EMAIL` env vars
+- Tailwind CSS with custom utility classes (container-max, section-padding)
+- Lucide React for consistent iconography
 
-- HTTPS enforced via hosting platform
-- No sensitive data storage (all handled externally)
-- GDPR compliance through consent checkboxes and privacy disclaimers
-- External form submissions only (no custom backend)
+## Environment Configuration
 
-## Target User Context
+Required environment variables for external integrations:
+- `VITE_WHATSAPP_URL` - WhatsApp Click-to-Chat base URL
+- `VITE_EMAIL` - Contact email for mailto links
 
-Primary users are first-time Italian property buyers who need assistance with auction registration. The interface should be:
-- Mobile-first responsive design
-- Simple and trust-building focused
-- Clear navigation to WhatsApp and form integrations
-- Italian language optimized
+## Build & Deployment
 
-## Integration Requirements
-
-When implementing features, ensure compatibility with:
-- WhatsApp deep linking for instant communication
-- External form embedding or linking (Google Forms/Typeform)
-- Optional document signing integrations
-- Email fallback mechanisms
+Configured for Vercel with automatic deployment:
+- Build command: `npm run build`
+- Output directory: `dist/`
+- Vite handles asset optimization and bundling
+- ESLint validation on build with zero warnings tolerance
