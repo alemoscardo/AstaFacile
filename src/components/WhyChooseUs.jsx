@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
   const benefits = [
     {
       title: 'Esperienza Comprovata',
-      description: 'Oltre 100 registrazioni completate con successo e un tasso di soddisfazione del 95%',
+      description: 'Oltre 150 registrazioni completate con successo e un tasso di soddisfazione del 95%',
       icon: Trophy
     },
     {

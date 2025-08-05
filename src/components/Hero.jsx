@@ -45,11 +45,11 @@ const Hero = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-fade-in-up animation-delay-600">
             <div className="bg-white rounded-lg p-6 shadow-sm">
-              <div className="text-3xl font-bold text-primary-600 mb-2">24h</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">48h</div>
               <div className="text-gray-600">Tempo medio di registrazione</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
-              <div className="text-3xl font-bold text-success-500 mb-2">100%</div>
+              <div className="text-3xl font-bold text-success-500 mb-2">95%</div>
               <div className="text-gray-600">Tasso di successo registrazioni</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
