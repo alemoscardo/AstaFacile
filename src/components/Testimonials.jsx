@@ -16,36 +16,31 @@ const Testimonials = () => {
       name: 'Giulia M.',
       location: 'Roma',
       text: 'Non avevo mai partecipato a un\'asta prima. Il team di AstaFacile mi ha guidato passo dopo passo e ora ho la casa dei miei sogni! Servizio impeccabile.',
-      rating: 5,
-      avatar: '👩‍💼'
+      rating: 5
     },
     {
       name: 'Marco & Sara',
       location: 'Milano',
       text: 'Pensavamo fosse impossibile comprare casa a Milano con il nostro budget. Grazie ad AstaFacile abbiamo trovato un appartamento fantastico all\'asta.',
-      rating: 5,
-      avatar: '👫'
+      rating: 5
     },
     {
       name: 'Antonio R.',
       location: 'Firenze',
       text: 'Processo velocissimo e trasparente. In 48 ore ero registrato per l\'asta. Il supporto su WhatsApp è stato fondamentale.',
-      rating: 5,
-      avatar: '👨‍💻'
+      rating: 5
     },
     {
       name: 'Laura C.',
       location: 'Torino',
       text: 'Servizio professionale e competente. Mi hanno aiutato a vincere la mia prima asta immobiliare. Consigliatissimo!',
-      rating: 5,
-      avatar: '👩‍🎓'
+      rating: 5
     },
     {
       name: 'Francesco P.',
       location: 'Napoli',
       text: 'Esperienza fantastica! Grazie al loro supporto sono riuscito ad acquistare casa ad un prezzo incredibile.',
-      rating: 5,
-      avatar: '👨‍🏫'
+      rating: 5
     }
   ]
 
@@ -133,12 +128,9 @@ const Testimonials = () => {
               </m.p>
               
               <div className="border-t pt-4 mt-auto relative z-10">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{testimonial.avatar}</span>
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-primary-600">{testimonial.location}</div>
-                  </div>
+                <div>
+                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
+                  <div className="text-primary-600">{testimonial.location}</div>
                 </div>
               </div>
 
@@ -171,9 +163,6 @@ const Testimonials = () => {
                 </p>
                 
                 <div className="text-center">
-                  <div className="flex items-center justify-center gap-3 mb-2">
-                    <span className="text-3xl">{testimonials[currentIndex].avatar}</span>
-                  </div>
                   <div className="font-semibold text-gray-900">{testimonials[currentIndex].name}</div>
                   <div className="text-primary-600">{testimonials[currentIndex].location}</div>
                 </div>
