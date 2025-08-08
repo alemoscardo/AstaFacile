@@ -162,14 +162,14 @@ const Header = () => {
               />
             </m.a>
             <m.a 
-              href="#testimonianze" 
+              href="#trasparenza" 
               className="text-gray-700 hover:text-primary-600 transition-colors relative group"
               whileHover={{ y: -2 }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              Testimonianze
+              Trasparenza
               <m.div
                 className="absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 origin-left"
                 initial={{ scaleX: 0 }}
@@ -275,7 +275,7 @@ const Header = () => {
                     Perché Noi
                   </m.a>
                   <m.a 
-                    href="#testimonianze" 
+                    href="#trasparenza" 
                     className="text-gray-700 hover:text-primary-600 hover:bg-primary-50 px-4 py-3 rounded-lg transition-all duration-200 font-medium"
                     onClick={handleMenuItemClick}
                     whileHover={{ x: 4 }}
@@ -283,7 +283,7 @@ const Header = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2 }}
                   >
-                    Testimonianze
+                    Trasparenza
                   </m.a>
                   <m.a 
                     href="#faq" 

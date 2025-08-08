@@ -101,8 +101,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2 }}
           >
-            Ti accompagniamo passo dopo passo nella partecipazione alle aste immobiliari. 
-            Dalla scoperta dell'immobile alla registrazione, rendiamo tutto semplice e sicuro.
+            Consulenza iniziale gratuita: analizziamo il tuo caso, condividiamo una checklist dei documenti e un preventivo.
+            La registrazione all'asta è un servizio a pagamento che avviamo solo su tua decisione.
           </m.p>
 
           <m.div 
@@ -158,52 +158,22 @@ const Hero = () => {
               className="glass-card rounded-lg p-6 hover:scale-105 transition-transform duration-300"
               whileHover={{ y: -5 }}
             >
-              <m.div className="text-3xl font-bold text-primary-600 mb-2">
-                {statsInView && (
-                  <CountUp
-                    start={0}
-                    end={48}
-                    duration={2}
-                    suffix="h"
-                  />
-                )}
-                {!statsInView && "48h"}
-              </m.div>
-              <div className="text-gray-600">Tempo medio di registrazione</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">Gratuita</div>
+              <div className="text-gray-600">Prima consulenza</div>
             </m.div>
             <m.div 
               className="glass-card rounded-lg p-6 hover:scale-105 transition-transform duration-300"
               whileHover={{ y: -5 }}
             >
-              <m.div className="text-3xl font-bold text-success-500 mb-2">
-                {statsInView && (
-                  <CountUp
-                    start={0}
-                    end={95}
-                    duration={2.5}
-                    suffix="%"
-                  />
-                )}
-                {!statsInView && "95%"}
-              </m.div>
-              <div className="text-gray-600">Tasso di successo registrazioni</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">Processo chiaro</div>
+              <div className="text-gray-600">Contratto senza sorprese</div>
             </m.div>
             <m.div 
               className="glass-card rounded-lg p-6 hover:scale-105 transition-transform duration-300"
               whileHover={{ y: -5 }}
             >
-              <m.div className="text-3xl font-bold text-primary-600 mb-2">
-                {statsInView && (
-                  <CountUp
-                    start={0}
-                    end={150}
-                    duration={3}
-                    suffix="+"
-                  />
-                )}
-                {!statsInView && "150+"}
-              </m.div>
-              <div className="text-gray-600">Clienti soddisfatti</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">Dati al sicuro</div>
+              <div className="text-gray-600">Non conserviamo i tuoi documenti</div>
             </m.div>
           </m.div>
         </div>

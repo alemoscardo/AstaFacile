@@ -11,7 +11,8 @@ const CTA = () => {
   }
 
   const handleEmailClick = () => {
-    const emailUrl = `mailto:${import.meta.env.VITE_EMAIL}?subject=Richiesta informazioni asta immobiliare&body=Ciao, vorrei maggiori informazioni sui vostri servizi per le aste immobiliari.`
+    const email = import.meta.env.VITE_EMAIL || 'borella.brianzaimmobiliare@gmail.com'
+    const emailUrl = `mailto:${email}?subject=Richiesta informazioni asta immobiliare&body=Ciao, vorrei maggiori informazioni sui vostri servizi per le aste immobiliari.`
     window.location.href = emailUrl
   }
 
@@ -20,11 +21,11 @@ const CTA = () => {
       <div className="container-max section-padding">
         <div className="text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pronto a Trovare la Tua Casa all'Asta?
+            Iniziamo con una consulenza iniziale gratuita
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Non aspettare oltre. Inizia oggi il tuo percorso verso la casa dei tuoi sogni 
-            con il supporto di esperti nelle aste immobiliari.
+            Parliamo del tuo caso, chiarisci i dubbi e ricevi una checklist dei documenti e un preventivo trasparente.
+            La registrazione all'asta partirà solo se decidi di procedere.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -52,7 +53,7 @@ const CTA = () => {
               onClick={handleEmailClick}
               className="text-primary-100 hover:text-white underline transition-colors"
               >
-              {import.meta.env.VITE_EMAIL}
+              {import.meta.env.VITE_EMAIL || 'borella.brianzaimmobiliare@gmail.com'}
             </button>
           </div>
 
@@ -63,12 +64,12 @@ const CTA = () => {
                 <div className="text-primary-200">Prima consulenza</div>
               </div>
               <div>
-                <div className="text-2xl font-bold mb-2">48h</div>
-                <div className="text-primary-200">Tempo medio registrazione</div>
+                <div className="text-2xl font-bold mb-2">Tempi rapidi</div>
+                <div className="text-primary-200">Registrazione senza attese inutili</div>
               </div>
               <div>
-                <div className="text-2xl font-bold mb-2">24/7</div>
-                <div className="text-primary-200">Supporto su WhatsApp</div>
+                <div className="text-2xl font-bold mb-2">WhatsApp</div>
+                <div className="text-primary-200">Risposta veloce e chiara</div>
               </div>
             </div>
           </div>

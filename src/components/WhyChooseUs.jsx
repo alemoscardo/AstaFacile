@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
   const benefits = [
     {
       title: 'Esperienza Comprovata',
-      description: 'Oltre 150 registrazioni completate con successo e un tasso di soddisfazione del 95%',
+      description: 'Processi ottimizzati e approccio pragmatico per gestire le registrazioni con cura',
       icon: Trophy,
       color: 'text-yellow-500'
     },
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
     },
     {
       title: 'Velocità Garantita',
-      description: 'Completiamo la registrazione in media entro 48 ore dal primo contatto',
+      description: 'Processi rapidi e organizzati per ridurre al minimo le attese',
       icon: Zap,
       color: 'text-yellow-400'
     },
@@ -187,7 +187,7 @@ const WhyChooseUs = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                La Prima Consulenza è Sempre Gratuita
+                Consulenza iniziale gratuita
               </m.h3>
               
               <m.p 
@@ -196,8 +196,8 @@ const WhyChooseUs = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                Parliamo del tuo progetto senza impegno. Ti spiegheremo tutto il processo 
-                e ti daremo un preventivo personalizzato.
+                Valutiamo il tuo caso senza impegno: ti forniamo una checklist dei documenti e un preventivo trasparente.
+                La registrazione all'asta è un servizio a pagamento e si avvia solo se decidi di procedere.
               </m.p>
               
               <m.button 
@@ -216,7 +216,7 @@ const WhyChooseUs = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.4, type: "spring" }}
               >
-                <span className="relative z-10">Richiedi Consulenza Gratuita</span>
+                <span className="relative z-10">Richiedi consulenza iniziale gratuita</span>
                 <m.div
                   className="absolute inset-0 bg-gray-100"
                   initial={{ x: '-100%' }}

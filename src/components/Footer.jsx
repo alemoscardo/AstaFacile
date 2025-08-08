@@ -3,6 +3,7 @@ import { Lock } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
+  const officialEmail = import.meta.env.VITE_EMAIL || 'borella.brianzaimmobiliare@gmail.com'
 
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -11,9 +12,14 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold text-primary-400 mb-4">AstaFacile</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              La piattaforma che semplifica l'accesso alle aste immobiliari in Italia. 
-              Ti accompagniamo passo dopo passo verso la casa dei tuoi sogni.
+              La piattaforma che semplifica l'accesso alle aste immobiliari in Italia.
+              Preferiamo la trasparenza: niente recensioni finte, solo processi chiari e contratti trasparenti.
             </p>
+            <div className="text-gray-400 text-sm space-y-1 mb-4">
+              <p><span className="text-gray-300">P.IVA:</span> <span>—</span></p>
+              <p><span className="text-gray-300">Sede:</span> <span>—</span></p>
+              <p><span className="text-gray-300">Email:</span> <span>{officialEmail}</span></p>
+            </div>
             <div className="flex space-x-4">
               <button 
                 onClick={() => window.open(import.meta.env.VITE_WHATSAPP_URL, '_blank')}
@@ -25,7 +31,7 @@ const Footer = () => {
                 </svg>
               </button>
               <button 
-                onClick={() => window.location.href = `mailto:${import.meta.env.VITE_EMAIL}`}
+                onClick={() => window.location.href = `mailto:${officialEmail}`}
                 className="text-primary-400 hover:text-primary-300 transition-colors"
                 aria-label="Email"
               >
@@ -50,8 +56,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#testimonianze" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Testimonianze
+                <a href="#trasparenza" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  Trasparenza
                 </a>
               </li>
               <li>
@@ -102,25 +108,25 @@ const Footer = () => {
               © {currentYear} AstaFacile. Tutti i diritti riservati.
             </div>
             <div className="flex space-x-6 text-sm">
-              <button 
-                onClick={() => alert('Privacy Policy - Per maggiori informazioni contattaci via WhatsApp')}
+              <a 
+                href="/privacy.html"
                 className="text-gray-400 hover:text-primary-400 transition-colors"
               >
                 Privacy Policy
-              </button>
-              <button 
-                onClick={() => alert('Termini di Servizio - Per maggiori informazioni contattaci via WhatsApp')}
+              </a>
+              <a 
+                href="/terms.html"
                 className="text-gray-400 hover:text-primary-400 transition-colors"
               >
                 Termini di Servizio
-              </button>
+              </a>
             </div>
           </div>
           
           <div className="mt-4 text-center text-xs text-gray-500">
-            <p className="flex items-center justify-center gap-2">
+              <p className="flex items-center justify-center gap-2">
               <Lock className="w-4 h-4" />
-              <span>Non conserviamo i tuoi documenti personali. Tutti i dati vengono gestiti tramite servizi sicuri di terze parti.</span>
+                <span>Non conserviamo i tuoi documenti personali. La consulenza iniziale è gratuita; la registrazione all'asta è un servizio a pagamento e parte solo su tua decisione.</span>
             </p>
             <p className="mt-1">
               Conformità GDPR garantita. I tuoi dati sono sempre protetti e utilizzati solo per fornirti il servizio richiesto.

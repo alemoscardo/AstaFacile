@@ -6,11 +6,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Quanto costa il vostro servizio?',
-      answer: 'La prima consulenza è sempre gratuita. I nostri costi dipendono dalla complessità della pratica, ma sono sempre trasparenti e concordati prima di iniziare. Nessun costo nascosto, solo tariffe chiare e competitive.'
+      answer: 'La consulenza iniziale è gratuita: analizziamo il caso, forniamo checklist e preventivo. La registrazione all\'asta è un servizio a pagamento che avviamo solo se decidi di procedere. Nessun costo nascosto.'
     },
     {
       question: 'Quanto tempo ci vuole per registrarsi a un\'asta?',
-      answer: 'In media completiamo la registrazione entro 48 ore dal primo contatto. Dipende dalla velocità con cui ci fornisci i documenti necessari e dalla specifica asta a cui vuoi partecipare.'
+      answer: 'Di norma completiamo la registrazione in tempi rapidi dal primo contatto. Dipende dalla velocità con cui ci fornisci i documenti necessari e dalla specifica asta a cui vuoi partecipare.'
     },
     {
       question: 'Che documenti servono per partecipare a un\'asta?',
@@ -34,7 +34,7 @@ const FAQ = () => {
     },
     {
       question: 'Avete una garanzia di successo?',
-      answer: 'Garantiamo la corretta registrazione alla procedura d\'asta, ma non possiamo garantire la vincita (che dipende dall\'offerta e dalla concorrenza). Il nostro tasso di successo nelle registrazioni è del 95%.'
+      answer: 'Garantiamo la corretta registrazione alla procedura d\'asta, ma non possiamo garantire la vincita (dipende dall\'offerta e dalla concorrenza). Puntiamo su processi chiari, tempi onesti e contratti trasparenti.'
     }
   ]
 
