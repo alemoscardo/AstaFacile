@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { m } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
-import ParticleBackground from './ParticleBackground'
+import { LazyParticleBackground } from '../utils/lazyComponents'
+import LoadingFallback from './LoadingFallback'
 
 const Hero = () => {
   const [statsRef, statsInView] = useInView({
@@ -22,7 +23,9 @@ const Hero = () => {
 
   return (
     <section className="relative bg-gradient-to-br from-primary-50 via-white to-primary-100 py-20 overflow-hidden">
-      <ParticleBackground />
+      <Suspense fallback={<LoadingFallback type="particles" />}>
+        <LazyParticleBackground />
+      </Suspense>
       <div className="absolute inset-0 gradient-glow opacity-30" />
       
       {/* Floating geometric shapes */}
