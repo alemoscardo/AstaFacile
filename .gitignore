@@ -9,6 +9,13 @@ lerna-debug.log*
 
 # Documentation files
 *.md
+CLAUDE.md
+architecture-astafacile.md
+prd-astafacile.md
+README.md
+CONSOLE_ERRORS_FIXED.md
+IMPLEMENTATION_SUMMARY.md
+MONITORING_PRIVACY.md
 
 # Node modules
 node_modules
