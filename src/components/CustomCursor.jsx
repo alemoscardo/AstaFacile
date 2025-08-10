@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { m, useMotionValue, useSpring } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { useMotionValue, useSpring } from 'framer-motion'
 
 const CustomCursor = () => {
-  const [isVisible, setIsVisible] = useState(false)
-  const [isHovering, setIsHovering] = useState(false)
+  const [, setIsVisible] = useState(false)
+  const [, setIsHovering] = useState(false)
   const [isMobile, setIsMobile] = useState(true)
   
   const cursorX = useMotionValue(0)
   const cursorY = useMotionValue(0)
   
   const springConfig = { damping: 25, stiffness: 700 }
-  const cursorXSpring = useSpring(cursorX, springConfig)
-  const cursorYSpring = useSpring(cursorY, springConfig)
+  useSpring(cursorX, springConfig)
+  useSpring(cursorY, springConfig)
 
   useEffect(() => {
     // Check if device supports hover (desktop)

@@ -17,7 +17,6 @@ import {
   LazyScrollProgress,
   LazyCustomCursor, 
   LazyFloatingWhatsApp,
-  LazyTestimonials,
   loadFramerMotionFeatures
 } from './utils/lazyComponents'
 

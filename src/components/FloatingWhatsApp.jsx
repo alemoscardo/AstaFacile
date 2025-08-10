@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { m, AnimatePresence } from 'framer-motion'
-import { MessageCircle, X } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 
 const FloatingWhatsApp = () => {
   const [isHovered, setIsHovered] = useState(false)

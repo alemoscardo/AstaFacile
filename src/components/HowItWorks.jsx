@@ -3,7 +3,6 @@ import { m } from 'framer-motion'
 import { Home, MessageCircle, FileText, CheckCircle, Lightbulb } from 'lucide-react'
 import { useInView } from 'react-intersection-observer'
 import AnimatedSection from './AnimatedSection'
-import StaggerContainer from './StaggerContainer'
 
 const HowItWorks = () => {
   const [ref, inView] = useInView({

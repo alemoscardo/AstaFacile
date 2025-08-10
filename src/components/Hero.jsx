@@ -1,13 +1,12 @@
 import React, { Suspense } from 'react'
 import { m } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
-import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 import { LazyParticleBackground } from '../utils/lazyComponents'
 import LoadingFallback from './LoadingFallback'
 
 const Hero = () => {
-  const [statsRef, statsInView] = useInView({
+  const [statsRef] = useInView({
     threshold: 0.3,
     triggerOnce: true
   })
