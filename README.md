@@ -4,8 +4,6 @@
 
 AstaFacile è una landing page che semplifica l'accesso alle aste immobiliari in Italia, guidando i compratori alle prime armi attraverso tutto il processo di registrazione.
 
-🌐 **Live Site**: [astafacile.it](https://astafacile.it)
-
 ## ✨ Caratteristiche
 
 - 📱 **Mobile-First Design** - Completamente responsive per tutti i dispositivi
@@ -31,28 +29,7 @@ Visita [localhost:5173](http://localhost:5173) per vedere il sito in sviluppo.
 - **Hosting**: Vercel
 - **Integrations**: WhatsApp, Email
 
-## 🎯 Obiettivi di Business
 
-- **Conversion Rate**: > 25% da visitatore a contatto
-- **Tempo Registrazione**: < 48 ore
-- **Customer Satisfaction**: ≥ 4.7/5
-- **Tasso di Referral**: > 15%
-
-## 🔧 Configurazione Pre-Deploy
-
-Prima del deployment in produzione:
-
-1. **WhatsApp**: Aggiorna il numero di telefono nei componenti
-2. **Email**: Configura l'indirizzo email di contatto
-3. **Forms**: Sostituisci gli ID placeholder con quelli reali
-4. **Analytics**: Configura il tracking se necessario
-
-## 📈 Performance Targets
-
-- Core Web Vitals: Tutti "Good"
-- Caricamento: < 3 secondi su 3G
-- Accessibilità: Score > 95
-- SEO: Score > 95
 
 ## 🚀 Deploy
 
@@ -61,6 +38,3 @@ Il progetto è configurato per deploy automatico su Vercel:
 - Build automatico con ottimizzazioni
 - Dominio personalizzato configurato
 
----
-
-Per documentazione tecnica dettagliata, vedi [CLAUDE.md](./CLAUDE.md)
