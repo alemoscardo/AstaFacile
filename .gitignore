@@ -14,6 +14,7 @@ prd-astafacile.md
 CONSOLE_ERRORS_FIXED.md
 IMPLEMENTATION_SUMMARY.md
 MONITORING_PRIVACY.md
+*.private.md
 
 # Node modules
 node_modules
@@ -32,12 +33,17 @@ dist-ssr
 *.sln
 *.sw?
 
-# Environment variables
+# Environment variables & sensitive files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+config/local.js
+config/production.js
 
 # Build outputs
 build/
@@ -65,8 +71,49 @@ Desktop.ini
 $RECYCLE.BIN/
 .vercel
 
-# Claude Code
+# Claude Code settings (contains local user preferences)
 .claude/
 
+# Development tools & caches
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.nyc_output/
+.vite/
+.turbo/
+
+# Test files & artifacts
+test-results/
+playwright-report/
+playwright/.cache/
+*.spec.js.snap
+*.test.js.snap
+
+# Storybook
 *storybook.log
-storybook-static
+storybook-static/
+chromatic-build/
+
+# Package managers
+.pnpm-store/
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Runtime & deployment
+.vercel/
+.netlify/
+.firebase/
+.now/
+
+# Backup & temp files
+*.bak
+*.backup
+*.orig
+*.rej
+*~
