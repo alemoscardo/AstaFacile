@@ -2,91 +2,65 @@
 
 **La tua casa all'asta, senza stress**
 
-AstaFacile è una piattaforma web statica che semplifica l'accesso alle aste immobiliari in Italia, guidando i compratori alle prime armi attraverso tutto il processo di registrazione.
+AstaFacile è una landing page che semplifica l'accesso alle aste immobiliari in Italia, guidando i compratori alle prime armi attraverso tutto il processo di registrazione.
 
-## 🚀 Avvio Rapido
+🌐 **Live Site**: [astafacile.it](https://astafacile.it)
+
+## ✨ Caratteristiche
+
+- 📱 **Mobile-First Design** - Completamente responsive per tutti i dispositivi
+- 🇮🇹 **Localizzato per l'Italia** - Interfaccia in italiano per il mercato locale
+- 💬 **Contatto Diretto** - Integrazione WhatsApp per comunicazione immediata
+- 🔒 **Sicuro & Privato** - Conformità GDPR, nessun backend richiesto
+- ⚡ **Performance Ottimizzate** - Core Web Vitals eccellenti, caricamento < 3s
+- ♿ **Accessibile** - Standard WCAG 2.1 AA
+
+## 🚀 Quick Start
 
 ```bash
-# Installa le dipendenze
 npm install
-
-# Avvia il server di sviluppo
 npm run dev
-
-# Build per produzione
-npm run build
-
-# Anteprima build di produzione
-npm run preview
 ```
 
-## 🏗️ Stack Tecnologico
+Visita [localhost:5173](http://localhost:5173) per vedere il sito in sviluppo.
+
+## 🏗️ Tech Stack
 
 - **Frontend**: React 18 + Vite
 - **Styling**: Tailwind CSS
-- **Hosting**: Vercel/Netlify (statico)
-- **Integrazioni**: WhatsApp, Google Forms, Email
-
-## 📱 Caratteristiche
-
-- ✅ Design mobile-first e completamente responsive
-- ✅ Interfaccia in italiano ottimizzata per il mercato locale
-- ✅ Integrazione WhatsApp per contatto diretto
-- ✅ Form esterni per raccolta dati sicura
-- ✅ Nessun backend - architettura completamente statica
-- ✅ Conformità GDPR e massima sicurezza
-- ✅ Ottimizzato per SEO e performance
-
-## 🔧 Configurazione
-
-Prima del deploy, aggiorna i seguenti elementi:
-
-1. **WhatsApp**: Sostituisci `393XXXXXXXXX` con il numero reale nei componenti
-2. **Google Forms**: Aggiorna `YOUR_FORM_ID` con l'ID del form reale
-3. **Email**: Configura l'indirizzo email reale (attualmente `info@astafacile.it`)
-4. **Dominio**: Aggiorna per il dominio finale `astafacile.it`
-
-## 📂 Struttura del Progetto
-
-```
-src/
-├── components/          # Componenti React
-│   ├── Header.jsx      # Navigazione e menu
-│   ├── Hero.jsx        # Sezione hero con CTA principali
-│   ├── HowItWorks.jsx  # Processo a 4 step
-│   ├── WhyChooseUs.jsx # Vantaggi e differenziatori
-│   ├── Testimonials.jsx # Recensioni clienti
-│   ├── CTA.jsx         # Call-to-action finale
-│   ├── FAQ.jsx         # Domande frequenti
-│   └── Footer.jsx      # Footer con contatti e link
-├── App.jsx             # Componente principale
-├── main.jsx           # Entry point
-└── index.css          # Stili Tailwind e utility
-```
+- **Hosting**: Vercel
+- **Integrations**: WhatsApp, Email
 
 ## 🎯 Obiettivi di Business
 
-- Conversion rate > 25% da click a contatto
-- Tempo medio registrazione < 48h
-- Customer satisfaction ≥ 4.7/5
-- Tasso di referral > 15%
+- **Conversion Rate**: > 25% da visitatore a contatto
+- **Tempo Registrazione**: < 48 ore
+- **Customer Satisfaction**: ≥ 4.7/5
+- **Tasso di Referral**: > 15%
 
-## 📈 Metriche di Performance
+## 🔧 Configurazione Pre-Deploy
 
-Il sito è ottimizzato per:
-- Core Web Vitals eccellenti
-- Caricamento < 3 secondi su 3G
-- Accessibilità WCAG 2.1 AA
-- SEO score > 95
+Prima del deployment in produzione:
+
+1. **WhatsApp**: Aggiorna il numero di telefono nei componenti
+2. **Email**: Configura l'indirizzo email di contatto
+3. **Forms**: Sostituisci gli ID placeholder con quelli reali
+4. **Analytics**: Configura il tracking se necessario
+
+## 📈 Performance Targets
+
+- Core Web Vitals: Tutti "Good"
+- Caricamento: < 3 secondi su 3G
+- Accessibilità: Score > 95
+- SEO: Score > 95
 
 ## 🚀 Deploy
 
-Il progetto è configurato per deploy automatico su Vercel/Netlify:
+Il progetto è configurato per deploy automatico su Vercel:
+- Ogni push su `main` triggera il deployment
+- Build automatico con ottimizzazioni
+- Dominio personalizzato configurato
 
-1. Collega il repository GitHub
-2. Configura le variabili d'ambiente se necessario
-3. Il deploy avviene automaticamente ad ogni push su main
+---
 
-## 📞 Supporto
-
-Per domande tecniche o modifiche, contatta il team di sviluppo.
+Per documentazione tecnica dettagliata, vedi [CLAUDE.md](./CLAUDE.md)
